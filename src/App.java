@@ -9,12 +9,24 @@ public class App { // classe main
 
         // Instânciando um objeto a  classe Banco
 
-        Banco b1 = new Banco();
-        b1.Mostrar();
+        Banco conta1 = new Banco();
+        conta1.SetNumConta(322467);
+        // conta1.SetTipoConta("CP");
+        conta1.SetDono("Leandro Moura");
+        conta1.AbrirConta("CC");
+        conta1.Depositar(100);
+        conta1.Sacar(25);
+        conta1.estadoAtual();
 
-        Banco b2 = new Banco();
-        b2.AbrirConta("CP"); // Abrindo conta do tipo CC, portanto meu ganhará bonus de 50 reais
-        b2.Mostrar();
+        
+        Banco conta2 = new Banco();
+        conta2.SetNumConta(562342);
+        conta2.SetDono("Leandrinho developer");
+        conta2.AbrirConta("CP");
+        conta2.Depositar(325);
+        conta2.Sacar(475);
+        conta2.FecharConta();
+        conta2.estadoAtual();
 
     }
 }
